@@ -1,8 +1,8 @@
 import { hydrate, prerender as ssr } from 'preact-iso';
-import { Divider, ThematicBreak } from '@bonniernews/dn-design-system-web/preact';
+import { Divider, ThematicBreak, Quote } from '@bonniernews/dn-design-system-web/preact';
 
 import dnLogo from './assets/dn-small.svg';
-import './style.css';
+import './assets/styles/main.scss';
 
 export function App() {
 	return (
@@ -15,6 +15,7 @@ export function App() {
       <p>Här kommer divider-komponenter</p>
       <Divider variant="medium" classNames="delare" attributes={{}} />
       <ThematicBreak classNames="tematisk-delare" />
+      <Quote bodyHtml="<div><h1>Detta är en quote</h1><h2>och detta är mer</h2>" />
 
 			<section>
 				<Resource
@@ -37,7 +38,7 @@ export function App() {
 	);
 }
 
-function Resource(props) {
+function Resource(props:any) {
 	return (
 		<a href={props.href} target="_blank" class="resource">
 			<h2>{props.title}</h2>
@@ -50,6 +51,6 @@ if (typeof window !== 'undefined') {
 	hydrate(<App />, document.getElementById('app'));
 }
 
-export async function prerender(data) {
+export async function prerender(data:any) {
 	return await ssr(<App {...data} />);
 }

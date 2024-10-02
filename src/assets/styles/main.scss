@@ -1,3 +1,7 @@
+@use "@bonniernews/dn-design-system-web/foundations/base.scss";
+@use "@bonniernews/dn-design-system-web/components/quote/quote.scss";
+@use "@bonniernews/dn-design-system-web/components/thematic-break/thematic-break.scss";
+
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -70,7 +74,7 @@ section {
 @media (prefers-color-scheme: dark) {
 	:root {
 		color: #ccc;
-		background-color: #1a1a1a;
+		background-color: rgb(43, 46, 86);
 	}
 	.resource {
 		color: #ccc;

@@ -7,10 +7,11 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@bonniernews/dn-design-system-web": "^20.5.1-beta.0",
+		"@bonniernews/dn-design-system-web": "^20.5.1-beta.2",
 		"preact": "^10.22.1",
 		"preact-iso": "^2.6.3",
-		"preact-render-to-string": "^6.5.11"
+		"preact-render-to-string": "^6.5.11",
+		"sass-embedded": "^1.79.4"
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.9.0",
